@@ -1,0 +1,59 @@
+{
+  "collectionName": "components_page_test_components",
+  "info": {
+    "displayName": "test component",
+    "icon": "bomb",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "moretext": {
+      "type": "richtext"
+    },
+    "mail": {
+      "type": "email"
+    },
+    "pw": {
+      "type": "password"
+    },
+    "num": {
+      "type": "integer"
+    },
+    "enum": {
+      "type": "enumeration",
+      "enum": [
+        "one",
+        "two",
+        "three"
+      ]
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bool": {
+      "type": "boolean"
+    },
+    "json": {
+      "type": "json"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}
